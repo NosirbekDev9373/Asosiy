@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	min-height: 100vh;
+	width: 100%;
+	font-size: 15px;
+	background: blue;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(53, 68, 50, 0.8);
+}
+.contactus-container {
+	z-index: 1;
+	width: 350px;
+	padding: 20px 20px;
+	border-radius: 2px;
+	background: #fff;
+	position: relative;
+	box-shadow: 20px 30px 50px 1px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.contactus-from {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input, textarea {
+	font-family: sans-serif;
+	width: 100%;
+	border: none;
+	padding: 10px 20px;
+	letter-spacing: 0.5px;
+	color: #333;
+	background-color: #e6e6e6;
+	outline: none;
+	margin-bottom: 16px;
+	border-radius: 25px;
+	min-height: 40px;
+}
+textarea {
+	resize: none;
+}
+input::placeholder,
+textarea::placeholder {
+	color: #777;
+	letter-spacing: 0.3px;	
+}
+button[type="submit"] {
+	margin: 8px auto;
+	border: none;
+	padding: 10px 24px;
+	letter-spacing: 0.5px;
+	outline: none;
+	border-radius: 25px;
+	font-size: 1em;
+	background-color: #57b846;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+	background-color: #57b846D0;
+}
+button[type="submit"] i{
+	display: inline-block;
+	margin-left: 8px;
+}
+
+
+
+
+
+
+
+
